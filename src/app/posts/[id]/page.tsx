@@ -1,3 +1,9 @@
+'use client'
+import { useEffect, useState } from 'react'
+import { useParams } from 'next/navigation'
+
 export default function postdetail() {
-  return <>포스트id</>
+  const { id } = useParams()
+
+  return <>{id}번 게시글 상세페이지</>
 }
